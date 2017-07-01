@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController">
+            <connections>
+                <outlet property="button" destination="tIO-bA-aU7" id="SQr-lf-8nf"/>
+                <outlet property="nameLabel" destination="OHR-EI-fpn" id="6mn-sC-3BI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIO-bA-aU7">
+                    <color key="backgroundColor" red="0.30074077072538863" green="0.30074077072538863" blue="0.30074077072538863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Register"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="-1" eventType="touchUpInside" id="sd2-y8-3DJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHR-EI-fpn">
+                    <color key="backgroundColor" red="0.28858938427298675" green="0.31483700979958101" blue="0.31553594559585496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.2411006231429198" green="0.69584159295237846" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OHR-EI-fpn" firstAttribute="trailing" secondItem="tIO-bA-aU7" secondAttribute="trailing" constant="47" id="1Dx-Y3-PNH"/>
+                <constraint firstItem="tIO-bA-aU7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-63.5" id="7G0-c8-cBH"/>
+                <constraint firstItem="OHR-EI-fpn" firstAttribute="bottom" secondItem="tIO-bA-aU7" secondAttribute="bottom" constant="104" id="8su-kn-LwQ"/>
+                <constraint firstItem="OHR-EI-fpn" firstAttribute="leading" secondItem="tIO-bA-aU7" secondAttribute="leading" constant="-48" id="FiH-Ew-u1i"/>
+                <constraint firstItem="OHR-EI-fpn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="FqJ-oY-SnU"/>
+                <constraint firstItem="tIO-bA-aU7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="koO-Vj-gRt"/>
+                <constraint firstItem="OHR-EI-fpn" firstAttribute="top" secondItem="tIO-bA-aU7" secondAttribute="top" constant="104" id="og3-rA-Wav"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="81.5"/>
+        </view>
+    </objects>
+</document>

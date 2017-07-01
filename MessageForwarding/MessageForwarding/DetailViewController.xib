@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="txtView" destination="3NB-tP-GTp" id="Eyo-XZ-uoP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyE-JF-Qqu">
+                    <color key="backgroundColor" red="0.27301246761658027" green="0.27301246761658027" blue="0.27301246761658027" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="63" id="h60-5c-LZv"/>
+                    </constraints>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" red="0.69220090109999999" green="0.70618118519999995" blue="0.70248467800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="XCO-J6-8Wh"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-tP-GTp">
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.47061311268006933" green="0.65906998694388119" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IyE-JF-Qqu" firstAttribute="top" secondItem="3NB-tP-GTp" secondAttribute="bottom" constant="22" id="1fH-nl-rXP"/>
+                <constraint firstItem="IyE-JF-Qqu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6S6-r9-BCj"/>
+                <constraint firstItem="3NB-tP-GTp" firstAttribute="centerX" secondItem="IyE-JF-Qqu" secondAttribute="centerX" id="82o-EA-Qby"/>
+                <constraint firstItem="IyE-JF-Qqu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TFk-yh-gua"/>
+                <constraint firstItem="3NB-tP-GTp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="hHx-t6-LBA"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="81.5"/>
+        </view>
+    </objects>
+</document>

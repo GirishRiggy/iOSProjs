@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="testWebview" destination="f1M-SP-efr" id="LuE-zL-Ex8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="g7C-De-xdH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f1M-SP-efr">
+                    <rect key="frame" x="67" y="58" width="240" height="511"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZ5-HA-xiU">
+                    <rect key="frame" x="166" y="20" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="ySx-1Q-Bj4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f1M-SP-efr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="7A5-YJ-ada"/>
+                <constraint firstAttribute="bottom" secondItem="f1M-SP-efr" secondAttribute="bottom" constant="98" id="EaG-SK-ClK"/>
+                <constraint firstItem="jZ5-HA-xiU" firstAttribute="centerX" secondItem="f1M-SP-efr" secondAttribute="centerX" id="eF0-Ut-oJa"/>
+                <constraint firstItem="jZ5-HA-xiU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kOv-Iu-aGz"/>
+                <constraint firstItem="f1M-SP-efr" firstAttribute="top" secondItem="jZ5-HA-xiU" secondAttribute="bottom" constant="17" id="o47-4X-5DK"/>
+                <constraint firstItem="jZ5-HA-xiU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="vrp-AN-x1m"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
